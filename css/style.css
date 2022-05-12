@@ -7,12 +7,6 @@
     font-family: 'Fredoka', sans-serif;
 }
 
-.container{
-    max-width: 1080px;
-    min-height: 200px;
-    margin: 0 auto;
-    text-align: center;
-}
 
 header{
     padding: 50px 0;
@@ -23,3 +17,25 @@ h1{
     padding-bottom: 50px;
 }
 
+/* Utilities */
+
+.container{
+    max-width: 1200px;
+    min-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.team-cards{
+    width: calc(100% / 3 - 40px);
+    height: 90px;
+    background-color: #000;
+    float: left;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
